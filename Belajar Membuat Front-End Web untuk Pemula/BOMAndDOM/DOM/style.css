@@ -1,0 +1,21 @@
+#main {
+  margin: 2px;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  font-size: 15px;
+  margin: 8px;
+  padding: 3px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  width: 95%;
+  background-color: black;
+}
