@@ -67,10 +67,26 @@ playButtonElement.setAttribute("disabled", true);
 // MENGUBAH KONTEN HTML - MEMANIPULASI KONTEN MELALUI innterText, innerHTML, dan style.property
 // Perbedaan innerText dan innerHTML
 const links = document.getElementById("links");
-// links.innerText; // Jalankan di console browser untuk melihat outputnya
-// Output: 'Situs lainnya yang tidak kalah menarik:\n\nDicoding\nGoogle'
-// links.innerHTML; // Jalankan di console browser untuk melihat outputnya
-// Output: '\n      <p>Situs lainnya yang tidak kalah menarik:</p>\n      <ul>\n        <li><a href="http://www.dicoding.com" id="dicodingLink">Dicoding</a></li>\n        <li><a href="http://www.google.com" id="googleLink">Google</a></li>\n      </ul>\n    '
+links.innerText; // Jalankan di console browser untuk melihat outputnya
+/* Output: 
+'
+Situs lainnya yang tidak kalah menarik:
+
+Dicoding
+Google
+'
+*/
+
+links.innerHTML; // Jalankan di console browser untuk melihat outputnya
+/* Output: 
+'
+  <p>Situs lainnya yang tidak kalah menarik:</p>
+  <ul>
+    <li><a href="http://www.dicoding.com" id="dicodingLink">Dicoding</a></li>
+    <li><a href="http://www.google.com" id="googleLink">Google</a></li>
+  </ul>\n
+'
+*/
 
 // Manipulasi Konten dengan innerText
 const dicoding = document.getElementById("dicodingLink");
@@ -86,6 +102,6 @@ google.innerHTML = '<i>Mencari sesuatu di Google</i>';
 // Manipulasi Style Konten dengan style.property
 const buttons2 = document.getElementsByClassName('button');
 for (const button of buttons2) {
-  console.log(button.children[0]);
+  // console.log(button.children[0]);
   button.children[0].style.borderRadius = '6px';
 }
