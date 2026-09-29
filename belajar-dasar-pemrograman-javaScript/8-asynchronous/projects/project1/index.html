@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Activity Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🌤️ Weather & Activity Planner</h1>
+            <p>Rencanakan harimu berdasarkan cuaca real-time di kotamu.</p>
+        </header>
+
+        <!-- Form Input -->
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Masukkan nama kota (misal: Jakarta, London)...">
+            <button id="search-btn">Cari</button>
+        </div>
+
+        <!-- Indikator Loading (Disembunyikan secara default) -->
+        <div id="loading" class="loading-spinner hidden">
+            <div class="spinner"></div>
+            <p>Mengambil data dari server...</p>
+        </div>
+
+        <!-- Pesan Error (Disembunyikan secara default) -->
+        <div id="error-message" class="error-card hidden">
+            <p id="error-text">Kota tidak ditemukan. Silakan coba lagi.</p>
+        </div>
+
+        <!-- Tampilan Hasil (Disembunyikan secara default) -->
+        <div id="result-container" class="result-card hidden">
+            <div class="weather-info">
+                <h2 id="result-city">Jakarta</h2>
+                <div class="weather-detail">
+                    <span id="weather-temp" class="temp">28°C</span>
+                    <span id="weather-desc" class="desc">Cerah</span>
+                </div>
+            </div>
+            
+            <hr class="divider">
+
+            <div class="activity-info">
+                <h3>💡 Rekomendasi Aktivitas:</h3>
+                <p id="activity-text">Sangat cocok untuk jalan-jalan sore di taman atau minum es kopi!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

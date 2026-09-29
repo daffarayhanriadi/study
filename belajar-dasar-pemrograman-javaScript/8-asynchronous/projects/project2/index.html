@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Kitchen Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kitchen-container">
+        <header>
+            <h1>🍳 Smart Kitchen Dashboard</h1>
+            <p>Visualisasi Alur Asynchronous JavaScript secara Real-Time</p>
+        </header>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <div class="input-group">
+                <label for="menu-select">Pilih Menu:</label>
+                <select id="menu-select">
+                    <option value="Nasi Goreng Wagyu">Nasi Goreng Wagyu</option>
+                    <option value="Mie Goreng Spesial">Mie Goreng Spesial</option>
+                    <option value="Ayam Bakar Madu">Ayam Bakar Madu</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label for="user-wallet">Saldo Dompet (Rp):</label>
+                <input type="number" id="user-wallet" value="75000" step="5000">
+            </div>
+
+            <div class="button-group">
+                <button id="btn-chaining" class="btn btn-blue">Jalankan via Promise Chaining</button>
+                <button id="btn-async" class="btn btn-green">Jalankan via Async / Await</button>
+            </div>
+        </div>
+
+        <!-- Monitor Log Dapur -->
+        <div class="log-section">
+            <h2>📜 Log Monitor Dapur</h2>
+            <div id="log-screen" class="log-screen">
+                <p class="system-msg">// Menunggu pesanan masuk...</p>
+            </div>
+            <button id="btn-clear" class="btn btn-clear">Clear Log</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
