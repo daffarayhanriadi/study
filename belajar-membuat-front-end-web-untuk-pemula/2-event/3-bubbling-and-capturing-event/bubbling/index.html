@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Event Bubbling</title> 
+  <link rel="stylesheet" type="text/css" href="./styles.css" >
+</head>
+<body>
+  <div onclick="alert('ELEMEN LANGIT')">
+    LANGIT
+    <div onclick="alert('ELEMEN LUAR')">
+      LUAR
+      <div onclick="alert('ELEMEN TENGAH')">
+        TENGAH
+        <div onclick="alert('ELEMEN DALAM')">
+          DALAM
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
+
