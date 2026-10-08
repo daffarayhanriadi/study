@@ -1,5 +1,6 @@
 /* Local Storage
-  * Data akan tetap bertahan walaupun jendela browser atau tab browser ditutup.
+  * Digunakan untuk menyimpan data tanpa ada batasan waktu.
+  * Data yang disimpan tidak akan hilang bila browser atau tabs browser ditutup kecuali jika kita menghapusnya.
   * Untuk menghapus datanya, tekan tombol "Hapus Storage" di mana tombol tersebut akan memanggil method .removeItem()
 */
 const localStorageKey = "PRESS_FREQUENCY";
