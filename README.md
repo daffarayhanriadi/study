@@ -1,2 +1,2 @@
-# dicoding
-Dicoding Course's Note
+# study (lifelong learning)
+Learning Note
