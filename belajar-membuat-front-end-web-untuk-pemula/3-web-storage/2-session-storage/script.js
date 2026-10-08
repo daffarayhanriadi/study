@@ -1,6 +1,7 @@
 /* Session Storage
+  * Digunakan untuk menyimpan data sementara pada browser
   * Data akan tetap bertahan jika terjadi reload/refresh pada browser
-  * Namun, data tersebut akan hilang apabila tab browser atau browser itu sendiri ditutup.
+  * Namun, Data akan hilang ketika browser atau tab browser ditutup.
 */
 const sessionStorageKey = 'PRESS_FREQUENCY';
 
