@@ -1,2 +1,2 @@
-# study (lifelong learning)
+# study
 Learning Note
