@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Kontak Layout</title>
+    <style>
+        /* Reset Dasar */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* 1. CONTAINER UTAMA (Garis Merah Terluar) */
+        .page-container {
+            border: 2px solid #e91e63; /* Merah */
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 650px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .page-title {
+            font-size: 28px;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            padding-left: 10px;
+        }
+
+        /* 2. PEMBUNGKUS DAFTAR KONTAK (Garis Oranye) */
+        .contact-list-wrapper {
+            border: 2px solid #ff9800; /* Oranye */
+            padding: 15px;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Memberi jarak antar item kontak */
+        }
+
+        /* 3. BARIS KONTAK SATUAN (Garis Hijau Tua) */
+        .contact-item-box {
+            border: 2px solid #4caf50; /* Hijau */
+            border-radius: 6px;
+            padding: 8px;
+        }
+
+        /* 4. KONTEN DI DALAM BARIS (Garis Ungu) */
+        .contact-item-content {
+            border: 2px solid #9c27b0; /* Ungu */
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            gap: 15px;
+        }
+
+        /* 5. WADAH AVATAR / FOTO (Garis Biru Sian) */
+        .avatar-container {
+            border: 2px solid #00bcd4; /* Sian */
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0; /* Mencegah lingkaran mengecil */
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* AREA DETAIL TEKS (Nama dan Username) */
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .contact-name {
+            font-weight: bold;
+            font-size: 16px;
+            color: #111111;
+        }
+
+        .contact-username {
+            font-size: 14px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Container Utama (Garis Merah) -->
+    <div class="page-container">
+        
+        <h1 class="page-title">Daftar Kontak</h1>
+
+        <!-- 2. Pembungkus Daftar Kontak (Garis Oranye) -->
+        <div class="contact-list-wrapper">
+
+            <!-- DATA KONTAK 1 -->
+            <!-- 3. Baris Kontak Satuan (Garis Hijau) -->
+            <div class="contact-item-box">
+                <!-- 4. Konten di Dalam Baris (Garis Ungu) -->
+                <div class="contact-item-content">
+                    <!-- 5. Wadah Avatar (Garis Sian) -->
+                    <div class="avatar-container">
+                        <!-- Ganti dengan URL gambar asli Anda jika diperlukan -->
+                        <img src="https://unsplash.com" alt="Dimas Saputra">
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-name">Dimas Saputra</span>
+                        <span class="contact-username">@dimasmds</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DATA KONTAK 2 -->
+            <div class="contact-item-box">
+                <div class="contact-item-content">
+                    <div class="avatar-container">
+                        <img src="https://unsplash.com" alt="Arif Faizin">
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-name">Arif Faizin</span>
+                        <span class="contact-username">@arifaizin</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DATA KONTAK 3 -->
+            <div class="contact-item-box">
+                <div class="contact-item-content">
+                    <div class="avatar-container">
+                        <img src="https://unsplash.com" alt="Rahmat Fajri">
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-name">Rahmat Fajri</span>
+                        <span class="contact-username">@rfajri27</span>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Selesai Pembungkus Daftar Kontak -->
+
+    </div> <!-- Selesai Container Utama -->
+
+</body>
+</html>
+
