@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Berita</title>
+    <style>
+        /* Reset & Base Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            border-radius: 5px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        /* 1: Container Utama (Garis Oranye) */
+        .main-container {
+            width: 100%;
+            max-width: 500px;
+            background: #ffffff;
+            padding: 20px;
+            border: 2px solid orange; /* Sesuai indikator 1 */
+            border-radius: 4px;
+        }
+
+        /* 2: Bagian Header (Garis Biru) */
+        .header-section {
+            border: 2px solid #0055ff; /* Sesuai indikator 2 */
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .header-section h1 {
+            font-size: 24px;
+            font-family: 'Georgia', serif;
+            color: #111;
+            margin-bottom: 5px;
+        }
+        .header-section .subtitle {
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* 3: Pembungkus Kartu Artikel (Garis Hijau) */
+        .article-card {
+            border: 2px solid #00cc66; /* Sesuai indikator 3 */
+            padding: 10px;
+        }
+
+        /* 4: Wadah Gambar & Label (Garis Sian) */
+        .image-container {
+            border: 2px solid #00cccc; /* Sesuai indikator 4 */
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        .image-container .category-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 4px 8px;
+            font-size: 11px;
+            font-weight: bold;
+            color: #000;
+            z-index: 10;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 5: Area Konten Teks (Garis Pink/Magenta) */
+        .text-content {
+            border: 2px solid #ff007f; /* Sesuai indikator 5 */
+            padding: 15px 10px;
+        }
+        .text-content .date {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+        .text-content h2 {
+            font-size: 20px;
+            font-family: 'Georgia', serif;
+            color: #000;
+            margin-bottom: 8px;
+        }
+        .text-content .excerpt {
+            font-size: 14px;
+            color: #444;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        /* 6: Tautan/Link (Garis Ungu) */
+        .find-more-link {
+            display: inline-block;
+            border: 2px solid #7f00ff; /* Sesuai indikator 6 */
+            color: #0055ff;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 2px 4px;
+        }
+        .find-more-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1: Container Utama -->
+    <div class="main-container">
+        
+        <!-- 2: Bagian Header -->
+        <div class="header-section">
+            <h1>Latest News</h1>
+            <p class="subtitle">Covering March & April 2022</p>
+        </div>
+
+        <!-- 3: Pembungkus Kartu Artikel -->
+        <div class="article-card">
+            
+            <!-- 4: Wadah Gambar & Label -->
+            <div class="image-container">
+                <span class="category-badge">News</span>
+                <!-- Ganti src dengan tautan gambar gedung Flatiron asli Anda jika ada -->
+                <img src="https://picsum.photos/600/400" alt="Flatiron Building">
+            </div>
+
+            <!-- 5: Area Konten Teks -->
+            <div class="text-content">
+                <p class="date">March 20 2022</p>
+                <h2>CNN Acquire BEME</h2>
+                <p class="excerpt">CNN purchased Casey Neistat's Beme app for $25million.</p>
+                
+                <!-- 6: Tautan/Link -->
+                <a href="#" class="find-more-link">Find out more</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
