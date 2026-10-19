@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinking in React Product Table</title>
+    <style>
+        * {
+          border-radius: 5px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* 1. FilterableProductTable (Kotak Kuning/Oranye) */
+        .filterable-product-table {
+            border: 2px solid #ffa500;
+            padding: 15px;
+            width: 320px;
+            background-color: #fff;
+        }
+
+        /* 2. SearchBar (Kotak Biru) */
+        .search-bar {
+            border: 2px solid #1e90ff;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .search-bar input[type="text"] {
+            width: 90%;
+            padding: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .search-bar label {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* 3. ProductTable (Kotak Hijau Tua) */
+        .product-table {
+            border: 2px solid #008080;
+            padding: 10px;
+        }
+        .table-header {
+            display: flex;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+            padding-left: 5px;
+        }
+        .table-header div {
+            width: 50%;
+        }
+
+        /* 4. ProductCategoryRow (Kotak Hijau Muda/Toska) */
+        .product-category-row {
+            border: 2px solid #40e0d0;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 3px 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* 5. ProductRow (Kotak Merah/Pink) */
+        .product-row {
+            border: 2px solid #db7093;
+            display: flex;
+            padding: 3px 5px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        .product-row div {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. FilterableProductTable -->
+    <div class="filterable-product-table">
+        
+        <!-- 2. SearchBar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <label>
+                <input type="checkbox"> Only show products in stock
+            </label>
+        </div>
+
+        <!-- 3. ProductTable -->
+        <div class="product-table">
+            <div class="table-header">
+                <div>Name</div>
+                <div>Price</div>
+            </div>
+
+            <!-- Kategori: Sporting Goods -->
+            <!-- 4. ProductCategoryRow -->
+            <div class="product-category-row">Sporting Goods</div>
+            
+            <!-- 5. ProductRow -->
+            <div class="product-row">
+                <div>Football</div>
+                <div>$49.99</div>
+            </div>
+            <div class="product-row">
+                <div>Baseball</div>
+                <div>$9.99</div>
+            </div>
+            <div class="product-row">
+                <div>Basketball</div>
+                <div>$29.99</div>
+            </div>
+
+            <!-- Kategori: Electronics -->
+            <!-- 4. ProductCategoryRow -->
+            <div class="product-category-row">Electronics</div>
+            
+            <!-- 5. ProductRow -->
+            <div class="product-row">
+                <div>iPod Touch</div>
+                <div>$99.99</div>
+            </div>
+            <div class="product-row">
+                <div>iPhone 5</div>
+                <div>$399.99</div>
+            </div>
+            <div class="product-row">
+                <div>Nexus 7</div>
+                <div>$199.99</div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
